@@ -231,7 +231,7 @@ function initiateDay() {
     let time_2 = new Date();
     sunx = time_2.getHours()*(15.625);
     
-    console.log(time_2.getHours() + ":" + time_2.getMinutes() + ":" + time_2.getSeconds());
+//     console.log(time_2.getHours() + ":" + time_2.getMinutes() + ":" + time_2.getSeconds());
     
     if(time_2.getHours() >= getDate().getSunrise.hour && time_2.getHours() < getDate().getSunset.hour) {
         if(time_2.getHours() >= 18) {
@@ -362,7 +362,7 @@ function initRain() {
 
 //API data fetching---------------------------
 function loadData(data) {
-    console.log(data);
+//     console.log(data);
 
     weather = data;
 }
@@ -381,7 +381,7 @@ function getLocation() {
     }
     
     function catchError(error) {
-        console.log("Error : " + error);
+//         console.log("Error : " + error);
     }
 
     // return location;
