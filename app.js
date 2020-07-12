@@ -377,7 +377,7 @@ function getLocation() {
     
         lat = position.coords.latitude;
         lon = position.coords.longitude;
-        loadJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&appid=43047219b2dc29840bd6ea54e88002e9', loadData);
+        loadJSON('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&appid=43047219b2dc29840bd6ea54e88002e9', loadData);
     }
     
     function catchError(error) {
