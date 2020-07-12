@@ -10,7 +10,7 @@ let sunx = 150, suny = 150;
 function preload() {
     arrowImg = loadImage('https://media.giphy.com/media/3o7aDfn97oAOuLTUOc/giphy.gif');
     wall = loadImage('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAFCCAMAAAAzJUSUAAAAOVBMVEUBDQ0BDg4GEBAgKSobJCQRGRoWHh8ACgoJExMSGxwZICEMFRUiLC0NFBUdJCUQFxgpMjMRHBwvNzk7ZrmQAAAA1klEQVR4nO3SSW7DMAwFUA3WYFl24t7/sK2TTYEewAH6nghQCy0+KIYYY4jhQ31ssI91fWY0NgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/rGW3q21695f7arr3K2tM6ew97rUtR+P+hitHaUs6SjL7ena7KG2nOc+R05zfeZlbPuxP8cs9e50LY+6/oTL7Ti/Sq557aOWo+YytvP9JL7qFn05rwH1kGIubUslhdJTCSGFaxtjvDFb+LX36c83fgNQhwOnSDxD1QAAAABJRU5ErkJggg==');
-    grassImg = loadImage('src/grass.png');  
+    grassImg = loadImage('grass.png');  
     errorImg = loadImage('https://media.giphy.com/media/WQOIEQRgiK722l3PQT/giphy.gif');
     snowfallImg = loadImage('https://i.gifer.com/5WWU.gif');
     snowfallImg2 = loadImage('https://i.gifer.com/2yqT.gif');
