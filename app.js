@@ -1,5 +1,5 @@
 let weather;
-let width = 375, height = 812;
+let width = 375, height = innerHeight;
 let r = 0, g = 0, b = 0;
 let hazeImg, thunderStormImg, heavyRainImg, grassImg, errorImg, snowfallImg, snowfallImg2, moonImg, mist, drizzleImg, lightRain, tornado;
 let  arrowImg, haze, windImg, movingTrees, flyingLeaves, lighteningImg, sunImg, cloudImg, blackCloudImg, wall;
@@ -8,29 +8,28 @@ let angle = 0;
 let sunx = 150, suny = 150;
 
 function preload() {
-    arrowImg = loadImage('https://media.giphy.com/media/3o7aDfn97oAOuLTUOc/giphy.gif');
+    arrowImg = loadImage('./gifs/3o7aDfn97oAOuLTUOc.webp');
     wall = loadImage('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAFCCAMAAAAzJUSUAAAAOVBMVEUBDQ0BDg4GEBAgKSobJCQRGRoWHh8ACgoJExMSGxwZICEMFRUiLC0NFBUdJCUQFxgpMjMRHBwvNzk7ZrmQAAAA1klEQVR4nO3SSW7DMAwFUA3WYFl24t7/sK2TTYEewAH6nghQCy0+KIYYY4jhQ31ssI91fWY0NgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/rGW3q21695f7arr3K2tM6ew97rUtR+P+hitHaUs6SjL7ena7KG2nOc+R05zfeZlbPuxP8cs9e50LY+6/oTL7Ti/Sq557aOWo+YytvP9JL7qFn05rwH1kGIubUslhdJTCSGFaxtjvDFb+LX36c83fgNQhwOnSDxD1QAAAABJRU5ErkJggg==');
     grassImg = loadImage('grass.png');  
-    errorImg = loadImage('https://media.giphy.com/media/WQOIEQRgiK722l3PQT/giphy.gif');
-    snowfallImg = loadImage('https://i.gifer.com/5WWU.gif');
-    snowfallImg2 = loadImage('https://i.gifer.com/2yqT.gif');
-    moonImg = loadImage('https://i.gifer.com/XVoD.gif');
-    mist = loadImage('https://media.giphy.com/media/UTHFuyuMENren9AI9b/giphy.gif');
-    drizzleImg = loadImage('https://media.giphy.com/media/3ohhwutQL0CDTq3kKA/giphy.gif');
-    lightRain = loadImage('https://i.gifer.com/1pX9.gif');
-    tornado = loadImage('https://media.giphy.com/media/iGjYHsBHD9E3pQxCAQ/giphy.gif');
-    haze = loadImage('https://media.giphy.com/media/xT9IgqjmZ870vakg4E/giphy.gif');
-    windImg = loadImage('https://media.giphy.com/media/24159SfYDapvvi7lKk/giphy.gif');
-    movingTrees = loadImage('https://media.giphy.com/media/5UFKKOQMNkdJMiKaOo/giphy.gif');
-    flyingLeaves = loadImage('https://media.giphy.com/media/PhfMmMOGMOpAK5YNrD/giphy.gif');
-    lighteningImg = loadImage('https://media.giphy.com/media/4TnYyp9q5J1tUkjRL3/giphy.gif');
-    sunImg = loadImage('https://media.giphy.com/media/ZFoIEu7kLVZlSpEo9A/giphy.gif');
-    cloudImg = loadImage('https://media.giphy.com/media/iIATYVzvV7lHiQbh0T/giphy.gif');
-    blackCloudImg = loadImage('https://i.gifer.com/Oupd.gif');
-    hazeImg = loadImage('https://media.giphy.com/media/3ov9jEvKwFU8Io6Oic/giphy.gif');
-    heavyRainImg = loadImage('https://media.giphy.com/media/Wmp1EOzVybWd13s5DB/giphy.gif');
-    normalRain = loadImage('https://media.giphy.com/media/81ibCJOlpBtnO/giphy.gif');
-
+    errorImg = loadImage('./gifs/WQOIEQRgiK722l3PQT.webp');
+    snowfallImg = loadImage('./gifs/5WWU.gif');
+    snowfallImg2 = loadImage('./gifs/2yqT.gif');
+    moonImg = loadImage('./gifs/XVoD.gif');
+    mist = loadImage('./gifs/UTHFuyuMENren9AI9b.gif');
+    drizzleImg = loadImage('./gifs/3ohhwutQL0CDTq3kKA.gif');
+    lightRain = loadImage('./gifs/1pX9.gif');
+    tornado = loadImage('./gifs/iGjYHsBHD9E3pQxCAQ.gif');
+    haze = loadImage('./gifs/xT9IgqjmZ870vakg4E.gif');
+    windImg = loadImage('./gifs/24159SfYDapvvi7lKk.gif');
+    movingTrees = loadImage('./gifs/5UFKKOQMNkdJMiKaOo.gif');
+    flyingLeaves = loadImage('./gifs/PhfMmMOGMOpAK5YNrD.gif');
+    lighteningImg = loadImage('./gifs/4TnYyp9q5J1tUkjRL3.gif');
+    sunImg = loadImage('./gifs/ZFoIEu7kLVZlSpEo9A.gif');
+    cloudImg = loadImage('./gifs/iIATYVzvV7lHiQbh0T.gif');
+    blackCloudImg = loadImage('./gifs/Oupd.gif');
+    hazeImg = loadImage('./gifs/3ov9jEvKwFU8Io6Oic.gif');
+    heavyRainImg = loadImage('./gifs/Wmp1EOzVybWd13s5DB.gif');
+    normalRain = loadImage('./gifs/81ibCJOlpBtnO.gif');
 }
 
 
